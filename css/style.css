@@ -1,247 +1,601 @@
-/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
-
-/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
+* {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
+body {
+  min-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  position: relative;
 }
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
+header>section {
+  width: 1250px;
+  height: 86px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  left: 0;
   overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+  z-index: 1000;
+  background: #EFF0F3;
+  box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
 }
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
+a.dasteen-blog {
+  color: #001858;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 26px;
+  margin-bottom: 15px;
+  text-decoration: none;
 }
-
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
+a.dasteen-blog>span {
+  width: 48px;
+  height: 27px;
+  color: #6246EA;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-
-.clearfix::after {
-  clear: both;
+.header-nav {
+  height: 86px;
+  margin-top: 22px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2B2C34;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
 }
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+.header-nav>ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: inherit;
 }
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+.header-nav>ul>li>a {
+  text-decoration: none;
+  color: inherit;
 }
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+.menu-header {
+  margin-left: 50px;
 }
+.buy-me-a-coffee {
+  display: flex;
+  padding: 10px 17px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  background: #6246EA;
+  color: #FFFFFE;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-left: 50px;
+  border: none;
+}
+.header-nav>ul>li>a>img {
+  padding-right: 10px;
+}
+/*-----------------------Front End Dev--------------------*/
+.front-end-dev-wrapper {
+  width: 100%;
+  background: #EFF0F3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.front-end-dev {
+  height: 814px;
+  width: 1250px;
+  flex-shrink: 0;
+  display: flex;
+}
+.front-end-dev-left-side {
+  width: 664px;
+  height: 345px;
+  flex-shrink: 0;
+  padding: 185px 116px 284px 0;
+}
+.front-end-dev-left-side>h1 {
+  width: 617px;
+  color: #2B2C34;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.front-end-dev-wrapper .blog-description {
+  height: 50px;
+  margin: 30px auto 30px 0;
+}
+.front-end-dev-left-side .vertical-line {
+  width: 3px;
+  height: 100%;
+  background: #2B2C34;
+}
+.front-end-dev-left-side p {
+  width: 652px;
+  color: #9A9494;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 12px;
+}
+.front-end-dev>img {
+  margin: 164px 95px auto auto;
+}
+.front-end-dev-left-side div {
+  display: flex;
+}
+.email {
+  display: flex;
+}
+.email>label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #FFFFFE;
+  margin-right: 20px;
+  width: 444px;
+  height: 67px;
+}
+.email>label>input {
+  font-size: 30px;
+  width: 444px;
+  height: 67px;
+  border: none;
+  border-radius: 8px;
+  padding-left: 5px;
+}
+input::placeholder {
+  color: #C0C0C0;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 21px;
+  padding-left: 25px
+}
+.email>button {
+  display: flex;
+  height: 67px;
+  padding: 20px 23px 19px 23px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background:  #6246EA;
+  border: none;
+  color: #FFFFFE;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+/*-----------------------Browse the category--------------------*/
+.category-wrapper {
+  height: 500px;
+  width: 100%;
+  background: #EFF0F3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.category-wrapper .category {
+  margin-top: 67px;
+  margin-bottom: 50px;
+}
+.category>div {
+  display: flex;
+  height: 25px;
+}
+.technology-wrapper {
+  height: 280px;
+  width: 1248px;
+  display: flex;
+  justify-content: space-between;
+}
+.css, .js, .vue-js, .react-js {
+  width: 220px;
+  height: 280px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #FFFFFE;
+}
+.tailwind {
+  background: #6246EA;
+  color: #FFFFFE;
+  width: 220px;
+  height: 280px;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+.category-wrapper h3 {
+  width: 118px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-left: 30px;
+}
+.icon {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 7.458px;
+  background: #FFFFFE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 65px auto 30px 30px
+}
+.technology-wrapper .css img{
+  width: 33px;
+  height: 37px;
+  flex-shrink: 0;
+}
+.technology-wrapper .js img{
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+}
+.technology-wrapper .tailwind img{
+  width: 40px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.technology-wrapper .vue-js img{
+  width: 36px;
+  height: 30.972px;
+  flex-shrink: 0;
+}
+.technology-wrapper .react-js img {
+  width: 40px;
+  height: 36px;
+  flex-shrink: 0;
+}
+/*-----------------------block of articles------------------------*/
+.block-of-articles {
+  width: 1252px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.react-js-article, .block-of-articles {
+  margin-bottom: 0;
+}
+/*-----------------------section headings---------------------*/
+.arrow-right {
+  margin: auto auto 2px 12px;
+  fill: #2B2C34;
+  stroke: #2B2C34;
+}
+.section-heading-h2{
+  color: #2B2C34;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.section-heading-a {
+  color: #2B2C34;
+  text-align: right;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.category {
+  width: 1252px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-top: 80px;
+}
+/*-------------------------articles-of-the-section-------------------*/
+.all-articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.articles-of-the-section {
+  display: flex;
+  width: 1252px;
+  justify-content: space-between;
+  gap: 16px;
+}
+.box-with-shadow {
+  border-radius: 12px;
+  background: #FFFFFE;
+  box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
+}
+.article-block {
+  width: 300px;
+  height: 425px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.article-block p {
+  color: #2B2C34;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-top: 25px;
+}
+/*----------------------------author--------------------------------*/
+.author {
+  bottom: 0;
+  display: flex;
+  position: absolute;
+  height: 57px;
+  width: 260px;
+  margin-bottom: 20px;
+}
+.author h3 {
+  width: 73px;
+  height: 20px;
+  color: #2B2C34;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 5.9px;
+}
+.author p {
+  width: 184px;
+  height: 21px;
+  margin: 4.2px 2px 5.9px auto;
+  color: #2B2C34;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.author div {
+  height: 57px;
+  margin-left: 15px;
+}
+.dot-between-text-in-text-author{
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  background: currentColor;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin: 0 14px;
+}
+.author img {
+  margin-left: 2px;
+}
+/*---------------------------button-More-Article---------------------*/
+.all-articles button {
+  display: flex;
+  padding: 20px 23px 19px 23px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background:#6246EA;
+  border: none;
+  color: #FFFFFE;
 
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-top: 80px;
+}
+/*---------------------subscribe-for-the-latest-update---------------*/
+
+.subscribe-for-the-latest-update {
+  width: 100%;
+  height: 453px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #EFF0F3;
+  margin-top: 80px;
+}
+.email-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 696px;
+}
+.subscribe-for-the-latest-update>div {
+  width: 696px;
+  border: 1px solid #12204a;
+  display: flex;
+  justify-content: center;
+}
+.mailbox img{
+  width: 80.066px;
+  height: 106.755px;
+  flex-shrink: 0;
+  margin-top: 23.25px
+}
+.subscribe-for-the-latest-update>.mailbox {
+  width: 130px;
+  height: 130px;
+  flex-shrink: 0;
+  background-color: #FFFFFE;
+  border-radius: 50%;
+  border: none;
+}
+.email-form h3 {
+  color: #2B2C34;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-top: 30px;
+}
+.email-form p {
+  color: #C0C0C0;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.mailbox {
+  width: 130px;
+  height: 130px;
+  flex-shrink: 0;
+  background-color: #FFFFFE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+  /*------------------------------footer-------------------------------*/
+.footer {
+  width: 100%;
+  height: 435px;
+  flex-shrink: 0;
+  background: #E4E5E9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-content {
+  height: 245px;
+  width: 1249px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70px;
+}
+.footer-logo {
+  width: 284px;
+  height: 138px;
+  margin-right: 160px;
+}
+.footer-category, .footer-about-me, .footer-follow-us {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-get-in-touch {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer h2 {
+  color: #2B2C34;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.footer h3, a.increase-font-size-on-hover, .footer a:not(.dasteen-blog) {
+  color: #2B2C34;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer-logo h3 {
+  margin-top: 20px;
+}
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.social-icons a {
+  align-items: start;
+  margin-right: 30px;
+}
+.social-icons {
+  margin-top: 20px;
+}
+.social-icons a:first-child {
+  display: inline-block;
+  transform: translateY(3px);
+}
+.footer-content .dasteen-blog {
+  margin-top: 0;
+}
+.footer-line {
+  margin-top: 50px;
+  width: 1250px;
+  height: 1px;
+  background: #C0C0C0;
+}
+.digitaldastin {
+  width: 1250px;
+  margin-top: 26px;
+  color: #2B2C34;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 26px;
+}
+/*-------------changing the state of buttons and links upon interaction-----------*/
+.button-press-effect:active {
+  transform: scale(0.95);
+}
+.section-heading-a:hover {
+  color: #6246EA;
+}
+.section-heading-a:hover + .arrow-right path {
+  fill: #6246EA;
+}
+.increase-font-size-on-hover:hover, .increase-font-size-on-hover:active {
+  transform: scale(1.1);
+}
+/*---------------------------------rotate element-------------------------------*/
+.rotate-an-element:hover {
+  transform: rotate(360deg);
+  transition: transform 1.5s ease;
+}
+.rotate-an-element {
+  display:inline-block;
+  transform: rotate(-360deg);
+  transition: transform 1.5s ease;
+}

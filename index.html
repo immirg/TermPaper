@@ -1,33 +1,382 @@
 <!doctype html>
-<html class="no-js" lang="">
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dasteen</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
-
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 </head>
-
 <body>
+<header>
+  <section>
+    <a class="dasteen-blog" href="#">Dasteen<span>.Blog</span></a>
+    <nav class="header-nav">
+      <ul>
+        <li class="menu-header increase-font-size-on-hover"><a href="#">Home</a></li>
+        <li class="menu-header increase-font-size-on-hover"><a href="#">Category</a></li>
+        <li class="menu-header increase-font-size-on-hover"><a href="#">About Me</a></li>
+        <li class="menu-header increase-font-size-on-hover"><a href="#"><img src="img/Icon.svg" alt="">Search</a></li>
+      </ul>
+      <button class="buy-me-a-coffee button-press-effect"><img src="img/simple-icons_buymeacoffee.svg" alt="">buy Me a Coffee</button>
+    </nav>
+  </section>
+</header>
+<section class="front-end-dev-wrapper">
+  <section class="front-end-dev">
+    <section class="front-end-dev-left-side">
+      <h1>Hi, i’m Dasteen<br>
+        Front end dev</h1>
+      <div class="blog-description">
+        <div class="vertical-line"></div>
+        <p>On this blog I share tips and tricks, frameworks, projects, tutorials, etc
+          Make sure you subscribe to get the latest updates</p>
+      </div>
+      <div class="email">
+        <label><input type="email" name="email" placeholder="Enter your email here..."></label>
+        <button class="button-press-effect">Subscribe</button>
+      </div>
+    </section>
+    <img src="img/learn-coding-1.png" alt="">
+  </section>
+</section>
+<section class="category-wrapper">
+  <div class="category">
+    <h2 class="section-heading-h2">Browse the category</h2>
+    <div>
+      <a class="section-heading-a" href="#" onclick="return false">see all category</a>
+      <svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" fill="none">
+        <path
+          d="M2.12695 0.856445C2.26762 0.873447 2.40289 0.923934 2.52344 1.00391C2.64258 1.08299 2.74477 1.18897 2.8252 1.31348L6.92969 7.29883L6.98047 7.37793C7.0915 7.56772 7.15037 7.7911 7.15039 8.01855C7.15039 8.27844 7.07341 8.53298 6.92969 8.73828L6.92871 8.73926L2.67969 14.7256C2.58144 14.8647 2.45449 14.9775 2.30859 15.0518C2.16579 15.1244 2.00919 15.1567 1.85156 15.1475C1.61078 15.148 1.38178 15.0498 1.20312 14.876C1.10273 14.7783 1.02036 14.6596 0.960938 14.5273C0.901575 14.3951 0.866058 14.2508 0.854492 14.1035C0.842971 13.9563 0.856025 13.8077 0.893555 13.666C0.931064 13.5244 0.991926 13.3915 1.07422 13.2754L1.0752 13.2744L4.82129 8.01172L1.20898 2.74023V2.73926C1.12819 2.62208 1.06808 2.48873 1.03223 2.34668C0.996245 2.20408 0.98469 2.05462 0.998047 1.90723C1.01142 1.75996 1.05019 1.61679 1.11133 1.48535C1.17253 1.35384 1.25551 1.23579 1.35742 1.13965C1.45879 1.03625 1.57848 0.956653 1.70996 0.907227C1.84371 0.857001 1.98615 0.839463 2.12695 0.856445Z"
+          fill="#2B2C34" stroke="#2B2C34" stroke-width="0.3"/>
+      </svg>
+    </div>
+  </div>
+  <section class="technology-wrapper">
+    <div class="css">
+      <div class="icon"><img src="img/Frame291.svg" alt=""></div>
+      <h3>CSS</h3>
+    </div>
+    <div class="js">
+      <div class="icon"><img src="img/Frame-298.svg" alt=""></div>
+      <h3>javascript</h3>
+    </div>
+    <div class="tailwind">
+      <div class="icon"><img src="img/logos_tailwindcss-icon.svg" alt=""></div>
+      <h3>Tailwind</h3>
+    </div>
+    <div class="vue-js">
+      <div class="icon"><img src="img/Frame-292.svg" alt=""></div>
+      <h3>Vue JS</h3>
+    </div>
+    <div class="react-js">
+      <div class="icon"><img src="img/logos_react.svg" alt=""></div>
+      <h3>React JS</h3>
+    </div>
+  </section>
+</section>
+<section class="all-articles">
+  <section>
+<!--     <section class="feature-article block-of-articles">-->
+    <div class="category">
+      <h2 class="section-heading-h2">Featured Article</h2>
+      <div class="navigation">
+        <a class="section-heading-a" href="#" onclick="return false">See All Article</a>
+        <svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" fill="none">
+          <path
+            d="M2.12695 0.856445C2.26762 0.873447 2.40289 0.923934 2.52344 1.00391C2.64258 1.08299 2.74477 1.18897 2.8252 1.31348L6.92969 7.29883L6.98047 7.37793C7.0915 7.56772 7.15037 7.7911 7.15039 8.01855C7.15039 8.27844 7.07341 8.53298 6.92969 8.73828L6.92871 8.73926L2.67969 14.7256C2.58144 14.8647 2.45449 14.9775 2.30859 15.0518C2.16579 15.1244 2.00919 15.1567 1.85156 15.1475C1.61078 15.148 1.38178 15.0498 1.20312 14.876C1.10273 14.7783 1.02036 14.6596 0.960938 14.5273C0.901575 14.3951 0.866058 14.2508 0.854492 14.1035C0.842971 13.9563 0.856025 13.8077 0.893555 13.666C0.931064 13.5244 0.991926 13.3915 1.07422 13.2754L1.0752 13.2744L4.82129 8.01172L1.20898 2.74023V2.73926C1.12819 2.62208 1.06808 2.48873 1.03223 2.34668C0.996245 2.20408 0.98469 2.05462 0.998047 1.90723C1.01142 1.75996 1.05019 1.61679 1.11133 1.48535C1.17253 1.35384 1.25551 1.23579 1.35742 1.13965C1.45879 1.03625 1.57848 0.956653 1.70996 0.907227C1.84371 0.857001 1.98615 0.839463 2.12695 0.856445Z"
+            fill="#2B2C34" stroke="#2B2C34" stroke-width="0.3"/>
+        </svg>
+      </div>
+    </div>
+    <section class="articles-of-the-section">
+      <div class="article-block box-with-shadow">
+        <img src="img/Article_Image_1.png" alt="">
+        <p>Fundamental of javascript</p>
+        <div class="author">
+          <img src="img/Ellipse_80.svg" alt="">
+          <div>
+            <h3>Dasteen</h3>
+            <p>Jan 10, 2022<span class="dot-between-text-in-text-author" aria-hidden="true"></span>3 min read</p>
+          </div>
+        </div>
+      </div>
+      <div class="article-block">
+        <img src="img/Article_Image_2.png" alt="">
+        <p>Grid CSS make your life easier</p>
+        <div class="author">
+          <img src="img/Ellipse_80.svg" alt="">
+          <div>
+            <h3>Dasteen</h3>
+            <p>Jan 10, 2022<span class="dot-between-text-in-text-author" aria-hidden="true"></span>3 min read</p>
+          </div>
+        </div>
+      </div>
+      <div class="article-block">
+        <img src="img/Article_Image_3.png" alt="">
+        <p>Make animated light mode and dark mode toggle with CSS</p>
+        <div class="author">
+          <img src="img/Ellipse_80.svg" alt="">
+          <div>
+            <h3>Dasteen</h3>
+            <p>Jan 10, 2022<span class="dot-between-text-in-text-author" aria-hidden="true"></span>3 min read</p>
+          </div>
+        </div>
+      </div>
+      <div class="article-block">
+        <img src="img/Article_Image_4.png" alt="">
+        <p>Make tic tac toe games with react JS</p>
+        <div class="author">
+          <img src="img/Ellipse_80.svg" alt="">
+          <div>
+            <h3>Dasteen</h3>
+            <p>Jan 10, 2022<span class="dot-between-text-in-text-author" aria-hidden="true"></span>3 min read</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <section class="css-article block-of-articles">
+    <div class="category">
+      <h2 class="section-heading-h2">CSS</h2>
+      <div>
+        <a class="section-heading-a" href="#" onclick="return false">See All Article</a>
+        <svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" fill="none">
+          <path
+            d="M2.12695 0.856445C2.26762 0.873447 2.40289 0.923934 2.52344 1.00391C2.64258 1.08299 2.74477 1.18897 2.8252 1.31348L6.92969 7.29883L6.98047 7.37793C7.0915 7.56772 7.15037 7.7911 7.15039 8.01855C7.15039 8.27844 7.07341 8.53298 6.92969 8.73828L6.92871 8.73926L2.67969 14.7256C2.58144 14.8647 2.45449 14.9775 2.30859 15.0518C2.16579 15.1244 2.00919 15.1567 1.85156 15.1475C1.61078 15.148 1.38178 15.0498 1.20312 14.876C1.10273 14.7783 1.02036 14.6596 0.960938 14.5273C0.901575 14.3951 0.866058 14.2508 0.854492 14.1035C0.842971 13.9563 0.856025 13.8077 0.893555 13.666C0.931064 13.5244 0.991926 13.3915 1.07422 13.2754L1.0752 13.2744L4.82129 8.01172L1.20898 2.74023V2.73926C1.12819 2.62208 1.06808 2.48873 1.03223 2.34668C0.996245 2.20408 0.98469 2.05462 0.998047 1.90723C1.01142 1.75996 1.05019 1.61679 1.11133 1.48535C1.17253 1.35384 1.25551 1.23579 1.35742 1.13965C1.45879 1.03625 1.57848 0.956653 1.70996 0.907227C1.84371 0.857001 1.98615 0.839463 2.12695 0.856445Z"
+            fill="#2B2C34" stroke="#2B2C34" stroke-width="0.3"/>
+        </svg>
+      </div>
+    </div>
+    <section class="articles-of-the-section">
+      <div class="article-block">
+        <img src="img/Article_Image_5.png" alt="">
+        <p>Flexbox cSS : Everything you need to know</p>
+        <div class="author">
+          <img src="img/Ellipse_80.svg" alt="">
+          <div>
+            <h3>Dasteen</h3>
+            <p>Jan 10, 2022<span class="dot-between-text-in-text-author" aria-hidden="true"></span>3 min read</p>
+          </div>
+        </div>
+      </div>
+      <div class="article-block">
+        <img src="img/Article_Image_2.png" alt="">
+        <p>Grid CSS make your life easier</p>
+        <div class="author">
+          <img src="img/Ellipse_80.svg" alt="">
+          <div>
+            <h3>Dasteen</h3>
+            <p>Jan 10, 2022<span class="dot-between-text-in-text-author" aria-hidden="true"></span>3 min read</p>
+          </div>
+        </div>
+      </div>
+      <div class="article-block">
+        <img src="img/Article_Image_6.png" alt="">
+        <p>3 easy way to make div center</p>
+        <div class="author">
+          <img src="img/Ellipse_80.svg" alt="">
+          <div>
+            <h3>Dasteen</h3>
+            <p>Jan 10, 2022<span class="dot-between-text-in-text-author" aria-hidden="true"></span>3 min read</p>
+          </div>
+        </div>
+      </div>
+      <div class="article-block">
+        <img src="img/Article_Image_3.png" alt="">
+        <p>Make animated light mode and dark mode toggle with CSS</p>
+        <div class="author">
+          <img src="img/Ellipse_80.svg" alt="">
+          <div>
+            <h3>Dasteen</h3>
+            <p>Jan 10, 2022<span class="dot-between-text-in-text-author" aria-hidden="true"></span>3 min read</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <section class="javascript-article block-of-articles">
+    <div class="category">
+      <h2 class="section-heading-h2">Javascript</h2>
+      <div>
+        <a class="section-heading-a" href="#" onclick="return false">See All Article</a>
+        <svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" fill="none">
+          <path
+            d="M2.12695 0.856445C2.26762 0.873447 2.40289 0.923934 2.52344 1.00391C2.64258 1.08299 2.74477 1.18897 2.8252 1.31348L6.92969 7.29883L6.98047 7.37793C7.0915 7.56772 7.15037 7.7911 7.15039 8.01855C7.15039 8.27844 7.07341 8.53298 6.92969 8.73828L6.92871 8.73926L2.67969 14.7256C2.58144 14.8647 2.45449 14.9775 2.30859 15.0518C2.16579 15.1244 2.00919 15.1567 1.85156 15.1475C1.61078 15.148 1.38178 15.0498 1.20312 14.876C1.10273 14.7783 1.02036 14.6596 0.960938 14.5273C0.901575 14.3951 0.866058 14.2508 0.854492 14.1035C0.842971 13.9563 0.856025 13.8077 0.893555 13.666C0.931064 13.5244 0.991926 13.3915 1.07422 13.2754L1.0752 13.2744L4.82129 8.01172L1.20898 2.74023V2.73926C1.12819 2.62208 1.06808 2.48873 1.03223 2.34668C0.996245 2.20408 0.98469 2.05462 0.998047 1.90723C1.01142 1.75996 1.05019 1.61679 1.11133 1.48535C1.17253 1.35384 1.25551 1.23579 1.35742 1.13965C1.45879 1.03625 1.57848 0.956653 1.70996 0.907227C1.84371 0.857001 1.98615 0.839463 2.12695 0.856445Z"
+            fill="#2B2C34" stroke="#2B2C34" stroke-width="0.3"/>
+        </svg>
+      </div>
+    </div>
+    <section class="articles-of-the-section">
+      <div class="article-block">
+        <img src="img/Article_Image_7.png" alt="">
+        <p>array in javasript - Learn JS #3</p>
+        <div class="author">
+          <img src="img/Ellipse_80.svg" alt="">
+          <div>
+            <h3>Dasteen</h3>
+            <p>Jan 10, 2022<span class="dot-between-text-in-text-author" aria-hidden="true"></span>3 min read</p>
+          </div>
+        </div>
+      </div>
+      <div class="article-block">
+        <img src="img/Article_Image_1.png" alt="">
+        <p>Fundamental of javascript</p>
+        <div class="author">
+          <img src="img/Ellipse_80.svg" alt="">
+          <div>
+            <h3>Dasteen</h3>
+            <p>Jan 10, 2022<span class="dot-between-text-in-text-author" aria-hidden="true"></span>3 min read</p>
+          </div>
+        </div>
+      </div>
+      <div class="article-block">
+        <img src="img/Article_Image_8.png" alt="">
+        <p>7 project with javascript you must try for your portfolio</p>
+        <div class="author">
+          <img src="img/Ellipse_80.svg" alt="">
+          <div>
+            <h3>Dasteen</h3>
+            <p>Jan 10, 2022<span class="dot-between-text-in-text-author" aria-hidden="true"></span>3 min read</p>
+          </div>
+        </div>
+      </div>
+      <div class="article-block">
+        <img src="img/Article_Image_9.png" alt="">
+        <p>make simple calculator with javascript</p>
+        <div class="author">
+          <img src="img/Ellipse_80.svg" alt="">
+          <div>
+            <h3>Dasteen</h3>
+            <p>Jan 10, 2022<span class="dot-between-text-in-text-author" aria-hidden="true"></span>3 min read</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <section class="react-js-article block-of-articles">
+    <div class="category">
+      <h2 class="section-heading-h2">React JS</h2>
+      <div>
+        <a class="section-heading-a" href="#" onclick="return false">See All Article</a>
+        <svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" fill="none">
+          <path
+            d="M2.12695 0.856445C2.26762 0.873447 2.40289 0.923934 2.52344 1.00391C2.64258 1.08299 2.74477 1.18897 2.8252 1.31348L6.92969 7.29883L6.98047 7.37793C7.0915 7.56772 7.15037 7.7911 7.15039 8.01855C7.15039 8.27844 7.07341 8.53298 6.92969 8.73828L6.92871 8.73926L2.67969 14.7256C2.58144 14.8647 2.45449 14.9775 2.30859 15.0518C2.16579 15.1244 2.00919 15.1567 1.85156 15.1475C1.61078 15.148 1.38178 15.0498 1.20312 14.876C1.10273 14.7783 1.02036 14.6596 0.960938 14.5273C0.901575 14.3951 0.866058 14.2508 0.854492 14.1035C0.842971 13.9563 0.856025 13.8077 0.893555 13.666C0.931064 13.5244 0.991926 13.3915 1.07422 13.2754L1.0752 13.2744L4.82129 8.01172L1.20898 2.74023V2.73926C1.12819 2.62208 1.06808 2.48873 1.03223 2.34668C0.996245 2.20408 0.98469 2.05462 0.998047 1.90723C1.01142 1.75996 1.05019 1.61679 1.11133 1.48535C1.17253 1.35384 1.25551 1.23579 1.35742 1.13965C1.45879 1.03625 1.57848 0.956653 1.70996 0.907227C1.84371 0.857001 1.98615 0.839463 2.12695 0.856445Z"
+            fill="#2B2C34" stroke="#2B2C34" stroke-width="0.3"/>
+        </svg>
+      </div>
+    </div>
+    <section class="articles-of-the-section">
+      <div class="article-block">
+        <img src="img/Article_Image_10.png" alt="">
+        <p>first month of leaning react jS</p>
+        <div class="author">
+          <img src="img/Ellipse_80.svg" alt="">
+          <div>
+            <h3>Dasteen</h3>
+            <p>Jan 10, 2022<span class="dot-between-text-in-text-author" aria-hidden="true"></span>3 min read</p>
+          </div>
+        </div>
+      </div>
+      <div class="article-block">
+        <img src="img/Article_Image_11.png" alt="">
+        <p>build markdown editor with react JS</p>
+        <div class="author">
+          <img src="img/Ellipse_80.svg" alt="">
+          <div>
+            <h3>Dasteen</h3>
+            <p>Jan 10, 2022<span class="dot-between-text-in-text-author" aria-hidden="true"></span>3 min read</p>
+          </div>
+        </div>
+      </div>
+      <div class="article-block">
+        <img src="img/Article_Image_12.png" alt="">
+        <p>getting started with react JS</p>
+        <div class="author">
+          <img src="img/Ellipse_80.svg" alt="">
+          <div>
+            <h3>Dasteen</h3>
+            <p>Jan 10, 2022<span class="dot-between-text-in-text-author" aria-hidden="true"></span>3 min read</p>
+          </div>
+        </div>
+      </div>
+      <div class="article-block box-with-shadow">
+        <img src="img/Article_Image_4.png" alt="">
+        <p>Make tic tac toe games with react JS</p>
+        <div class="author">
+          <img src="img/Ellipse_80.svg" alt="">
+          <div>
+            <h3>Dasteen</h3>
+            <p>Jan 10, 2022<span class="dot-between-text-in-text-author" aria-hidden="true"></span>3 min read</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <button class="button-press-effect">More Article</button>
+</section>
+<section class="subscribe-for-the-latest-update">
+  <section class="email-form">
+    <div class="mailbox">
+      <img src="img/mailbox.png" alt="">
+    </div>
+    <h3>Subscribe For the lastest updates</h3>
+    <p>Subscribe to newsletter and never miss the new post every week.</p>
+    <div class="email">
+      <label><input type="email" name="email" placeholder="Enter your email here..."></label>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
-
+      <button class="button-press-effect">Subscribe</button>
+    </div>
+  </section>
+</section>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <a class="dasteen-blog" href="#">Dasteen<span>.Blog</span></a>
+      <h3>Digitaldastin by Dastin Darmawan</h3>
+      <div class="social-icons">
+        <a href="#" onclick="return false"><img class="rotate-an-element" src="img/Medium-Monogram.png" alt=""></a>
+        <a href="#" onclick="return false"><img class="rotate-an-element" src="img/Vector.svg" alt=""></a>
+        <a href="#" onclick="return false"><img class="rotate-an-element" src="img/instagram.svg" alt=""></a>
+        <a href="#" onclick="return false"><img class="rotate-an-element" src="img/linkedin.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="footer-category">
+      <h2>Category</h2>
+      <a class="increase-font-size-on-hover" href="#" onclick="return false">CSS</a>
+      <a class="increase-font-size-on-hover" href="#" onclick="return false">Javascript</a>
+      <a class="increase-font-size-on-hover" href="#" onclick="return false">Tailwind</a>
+      <a class="increase-font-size-on-hover" href="#" onclick="return false">React JS</a>
+      <a class="increase-font-size-on-hover" href="#" onclick="return false">More Category</a>
+    </div>
+    <div class="footer-about-me">
+      <h2>About Me</h2>
+      <a class="increase-font-size-on-hover" href="#" onclick="return false">Projects</a>
+      <a class="increase-font-size-on-hover" href="#" onclick="return false">Achievement</a>
+    </div>
+    <div class="footer-get-in-touch">
+      <h2>Get in touch</h2>
+      <div class="increase-font-size-on-hover"><a href="tel:+62-8XXXXXXXX">+62-8XXX-XXX-XX</a></div>
+      <div class="increase-font-size-on-hover"><a href="mailto:demo@gmail.com">demo@gmail.com</a></div>
+    </div>
+    <div class="footer-follow-us">
+      <h2>Follow Us</h2>
+      <a class="increase-font-size-on-hover" href="#" onclick="return false">Medium</a>
+      <a class="increase-font-size-on-hover" href="#" onclick="return false">Instagram</a>
+      <a class="increase-font-size-on-hover" href="#" onclick="return false">Twitter</a>
+      <a class="increase-font-size-on-hover" href="#" onclick="return false">Facebook</a>
+    </div>
+  </div>
+  <div class="footer-line"></div>
+  <div class="digitaldastin">
+    <p>© 2025 Digitaldastin</p>
+  </div>
+</footer>
 </body>
-
 </html>
